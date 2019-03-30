@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+  }
+
+.topics {
+    border-width: 2px;
+    font-size: 25px;
+    color: lime;
+    text-align: center;
+    cursor: pointer;
+    background-color: orange;
+    font-weight: bolder;
+    padding: 5px;
+    margin: 0 auto;
+    display: inline-block;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black ;
+}
+
+#ratings {
+    padding: 3px;
+    margin: 5px;
+    margin-top: auto;
+    font-size: 30px;
+    text-align: center;
+    background-color: red;
+    height: 0 auto; 
+}
+
+ .topics:hover {
+    background-color:#FFFF66;
+}
+  
+  .topics:active {
+    background-color:red; /* When the button is clicked */
+    box-shadow: 0 7px green;
+    transform: translateY(4px);
+  }
+
+div {
+    display: inline-block;
+    background-color:transparent;
+    border-radius: 1px;
+    border-style: ridge;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 24px;
+    padding: 15px;
+    font-weight: bolder;
+}
+
+body {
+    text-align: center;
+    font-size: 30 px;
+    color: white;
+    background: url(../images/jordan90s.jpg);
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+
+
+footer {
+    text-align: center;
+    color: black;
+    border-top: 1px solid black;
+    background: transparent;
+    font-weight: bolder;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: 40px auto;
+}
+  
+@media only screen and (max-width: 980px) {
+    body {
+        max-width: 100%;
+        height: auto;
+    }
+    .wrapper {
+        width: 800px;
+      }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        max-width: 100%;
+        height: auto;
+    }
+    .wrapper {
+        width: 800px;
+      }
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        max-width: 100%;
+        height: auto;
+    }
+    header {
+        position: static;
+    }
+    .wrapper {
+        width: 600px;
+      }
+}
+
+
