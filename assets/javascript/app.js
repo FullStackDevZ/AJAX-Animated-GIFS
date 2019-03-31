@@ -42,13 +42,16 @@ function showGif(response) {
     $('#gifs').empty();
     for (var i = 0; i < response.data.length; i++) {
 
+        if (response.data[i].rating !== "r" && response.data[i].rating !== "pg-13") {
+
         var rating = "<div id='ratings'> Rating:  " + (response.data[i].rating) + "<br> </div>";
         var image = rating + '<br> <img src= " ' + response.data[i].images.fixed_height_still.url +
             '" data-stop=" ' + response.data[i].images.fixed_height_still.url +
             ' " data-play=" ' + response.data[i].images.fixed_height.url + '" data-state="stop" class="playImage" style= "width:260px; height:260px">';
 
-        image = '<div class="col-md-4">' + image + "</div>";
+        image = '<div class="col-md-6">' + image + "</div>";
         $('#gifs').append(image);
+        }
 
     }
 
