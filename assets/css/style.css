@@ -13,6 +13,10 @@
     padding: 5px;
     margin: 0 auto;
     display: inline-block;
+    border-color: black;
+    border-style: solid;
+    border-radius: 7px;
+    border-width: 3px;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black ;
     height: auto;
@@ -29,7 +33,7 @@
 }
 
  .topics:hover {
-    background-color:#FFFF66;
+    background-color:red;
 }
   
   .topics:active {
@@ -47,6 +51,7 @@ div {
     font-weight: bolder;
     color: white;
     height: auto;
+    
 }
 
 header {
