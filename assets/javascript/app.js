@@ -1,4 +1,4 @@
-var topics = ["Michael Jordan", "Steve Urkel", "Emmitt Smith", "AC Slater", "X-Men", "Ken Griffey Jr.", "Corey Matthews", "Friends", "Seinfeld"];
+var topics = ["Michael Jordan", "Steve Urkel", "Deion Sanders", "AC Slater", "X-Men", "Ken Griffey Jr.", "Corey Matthews", "Friends", "Seinfeld"];
 
 // Creates the buttons
 $(document).ready(function () {
@@ -22,6 +22,9 @@ function newTopic() {
     }
 }
 
+function reset() {
+    $('#topic-buttons').empty();
+}
 // Finds the GIF via searching the API
 function findGifs(gifTopic) {
     $.ajax({
@@ -33,9 +36,6 @@ function findGifs(gifTopic) {
         })
 }
 
-function reset () {
-    $("#gifs").empty();
-}
 
 // Shows the GIFs
 function showGif(response) {
@@ -47,7 +47,7 @@ function showGif(response) {
         var rating = "<div id='ratings'> Rating:  " + (response.data[i].rating) + "<br> </div>";
         var image = rating + '<br> <img src= " ' + response.data[i].images.fixed_height_still.url +
             '" data-stop=" ' + response.data[i].images.fixed_height_still.url +
-            ' " data-play=" ' + response.data[i].images.fixed_height.url + '" data-state="stop" class="playImage" style= "width:260px; height:260px">';
+            ' " data-play=" ' + response.data[i].images.fixed_height.url + '" data-state="stop" class="playImage" style= "width:260px; height:240px">';
 
         image = '<div class="col-md-6">' + image + "</div>";
         $('#gifs').append(image);

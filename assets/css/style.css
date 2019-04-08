@@ -15,6 +15,7 @@
     display: inline-block;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black ;
+    height: auto;
 }
 
 #ratings {
@@ -45,6 +46,7 @@ div {
     font-size: 30px;
     font-weight: bolder;
     color: white;
+    height: auto;
 }
 
 header {
@@ -67,7 +69,6 @@ body {
     left: 0;
     
 }
-
 
 
 footer {
