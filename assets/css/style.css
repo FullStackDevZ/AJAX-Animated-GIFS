@@ -19,6 +19,7 @@
     border-width: 3px;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black ;
+    width: auto;
     height: auto;
 }
 
