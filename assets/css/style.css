@@ -51,6 +51,8 @@ div {
     font-size: 30px;
     font-weight: bolder;
     color: white;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
     height: auto;
     
 }
@@ -67,6 +69,8 @@ body {
     text-align: center;
     font-size: 30 px;
     color: white;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
     background: url(../images/jordan90s.jpg);
     min-width: 100%;
     min-height: 100%;

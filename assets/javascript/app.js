@@ -25,6 +25,9 @@ function newTopic() {
 function reset() {
     $('#topic-buttons').empty();
 }
+
+
+
 // Finds the GIF via searching the API
 function findGifs(gifTopic) {
     $.ajax({
